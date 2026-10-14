@@ -31,7 +31,7 @@ def simulation(true_ivelocity, true_iheight, true_iangle, true_gravity, true_mas
         instdistance += instvelocity_x * 0.001
         insttime += 0.001
 
-        instangle = math.atan2(instvelocity_y, instvelocity_x) * (360 / (2 * math.pi))
+        instangle = -math.atan2(instvelocity_y, instvelocity_x) * (360 / (2 * math.pi))
         list_height.append(float(instheight))
         list_distance.append(float(instdistance))
         list_velocity.append(float(instvelocity))
