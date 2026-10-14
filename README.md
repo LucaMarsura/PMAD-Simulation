@@ -1,10 +1,10 @@
-# PMADS - Projectile Motion and Drag Simulator
+# PMADS - Projectile Motion and Drag Simulation
 
-PMADS is a web application modelling projectile motion under various aerodynamic conditions. Eight variables can be tweaked through user-controlled sliders to view custom trajectories,
+The PMAD Simulation (PMADS) is a web application modelling projectile motion under various aerodynamic conditions. Eight variables can be tweaked through user-controlled sliders to view custom trajectories.
 
 ## What it does
 
-**Simulation** Four Launch Parameters, initial velocity, height, angle, and gravity, can be controlled to set a custom trajectory. The engine integrates forces at 1000 Hz and outputs trajectory data, as well as a three-point energy analysis. The iterative properties of the simulator allow a launch parameter to be inferred under certain conditions when a dependent value (distance, maximum height, time, and final velocity) is given by the user.
+**Simulation** Four launch parameters (initial velocity, height, angle, and gravity) can be controlled to set a custom trajectory. The engine integrates forces at 1000 Hz and outputs trajectory data, as well as a three-point energy analysis. The iterative properties of the simulator allow a launch parameter to be inferred under certain conditions when a dependent value (distance, maximum height, time, and final velocity) is given by the user.
 
 **Game** A challenge is randomly generated with three parameters locked and one hidden. A target zone is shown on the graph. The variable slider can be adjusted to aim change trajectory towards the target. Once the trajectory reaches the target zone within ±2%, the challenge is completed.
 
@@ -13,9 +13,9 @@ PMADS is a web application modelling projectile motion under various aerodynamic
 server.py
 requirements.txt
 backend/
-    simulation.py: Force Integration
+    simulation.py: Force integration
     solver.py: Iterative solver
-    energyanalysis.py: Energy Analysis
+    energyanalysis.py: Energy analysis
     trajectorygraphing.py: Trajectory graph creation and export
     main.py: Simulation request handler
     game.py: Challenge generation and regeneration

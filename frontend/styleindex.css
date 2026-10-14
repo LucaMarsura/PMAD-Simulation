@@ -106,62 +106,11 @@ a#game-cta {
     color: #6b7280;
 }
 
-#stats-strip {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 60px;
-    background: #fff;
-    border-top: 1.5px solid #e5e5e5;
-    border-bottom: 1.5px solid #e5e5e5;
-    margin: 12px 0;
-    gap: 0;
-}
-
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    flex: 1;
-}
-
-.stat-number {
-    font-size: 28px;
-    font-weight: 800;
-    color: #0b5190;
-    line-height: 1;
-    letter-spacing: -0.02em;
-}
-
-.stat-beta {
-    font-size: 8px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #fff;
-    background: #0b5190;
-    border-radius: 3px;
-    padding: 1px 4px;
-    vertical-align: middle;
-    opacity: 0.75;
-}
-
-.stat-label {
-    font-size: 11px;
-    font-weight: 500;
-    color: #6b7280;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    text-align: center;
-}
-
-.stat-divider {
-    width: 1.5px;
-    height: 36px;
-    background: #e5e5e5;
-    flex-shrink: 0;
+#home-divider {
+    border: none;
+    height: 1.5px;
+    background-color: #e5e5e5;
+    margin: 24px 60px 12px;
 }
 
 .list {
@@ -257,18 +206,8 @@ a#game-cta {
 }
 
 @media (max-width: 900px) {
-    #stats-strip {
-        flex-wrap: wrap;
-        gap: 24px;
-        padding: 32px 30px;
-    }
-
-    .stat-divider {
-        display: none;
-    }
-
-    .stat-item {
-        flex: 0 0 calc(33% - 16px);
+    #home-divider {
+        margin: 20px 30px 8px;
     }
 
     #accuracy {
@@ -309,17 +248,8 @@ a#game-cta {
         padding: 0 16px;
     }
 
-    #stats-strip {
-        padding: 24px 16px;
-        gap: 16px;
-    }
-
-    .stat-item {
-        flex: 0 0 calc(50% - 8px);
-    }
-
-    .stat-number {
-        font-size: 28px;
+    #home-divider {
+        margin: 16px 16px 4px;
     }
 
     .list {

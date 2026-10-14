@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="styleindex.css">
-    <title>PMADS</title>
+    <title>PMAD Simulation</title>
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" href="/favicon-96.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:site_name" content="PMAD Simulation">
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "WebSite", "name": "PMAD Simulation", "alternateName": "PMADS", "url": "https://pmad-sim.org/"}
+    </script>
     <meta property="og:image" content="https://pmad-sim.org/images/logo.png">
 
     
@@ -47,41 +54,16 @@
         </div>
     </a>
 
-    <div id="stats-strip">
-        <div class="stat-item">
-            <span class="stat-number">400+</span>
-            <span class="stat-label">Active Users</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-            <span class="stat-number">30+</span>
-            <span class="stat-label">Countries</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-            <span class="stat-number">1 kHz</span>
-            <span class="stat-label">Integration Rate</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-            <span class="stat-number">8</span>
-            <span class="stat-label">Launch Variables</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-            <span class="stat-number">14</span>
-            <span class="stat-label">Aerodynamic Profiles</span>
-        </div>
-    </div>
+    <hr id="home-divider">
 
     <section id="accuracy">
         <div id="accuracy-text">
             <h2 id="accuracy-title">Accuracy</h2>
-            <p class="accuracy-para">To validate the simulation, a foam ball was drop-kicked and its flight recorded on video. Its position was then tracked frame by frame. The graph compares the measured trajectory with two predictions from the same launch conditions: the PMADS simulation, which models aerodynamic drag, and an ideal kinematic model, which ignores air resistance.</p>
+            <p class="accuracy-para">To validate the simulation, a foam ball was drop-kicked and its flight recorded on video. Its position was then tracked frame by frame. The graph compares the measured trajectory with two predictions from the same launch conditions: the PMAD Simulation, which models aerodynamic drag, and an ideal kinematic model, which ignores air resistance.</p>
             <p class="accuracy-para">The results show how large the effect of drag is and how well PMADS accounts for it. Across 39 matched points, the PMADS trajectory has a root-mean-square error (RMSE) of <strong>0.21&nbsp;m</strong> against the measured data, compared with <strong>1.34&nbsp;m</strong> for the ideal model. The ideal model overestimates the range by roughly 3.5&nbsp;m; PMADS lands within about 0.3&nbsp;m of the measured range. This remaining deviation is likely due to fluid-dynamic effects the model does not capture, such as spin or airflow around the ball, and to assumptions about the ball's drag coefficient.</p>
             <p class="accuracy-para accuracy-note">PMADS is intended for education, exploration, and hobby use. While it closely reproduces real-world behavior, it has not been certified or independently validated, and it should not be relied upon for professional, research, engineering, or other institutional purposes.</p>
         </div>
-        <img src="images/trajectory_accuracy.png" id="accuracy-img" alt="Graph of height against horizontal position for a drop-kicked foam ball, comparing measured data with the PMADS drag simulation (RMSE 0.21 m) and an ideal kinematic model (RMSE 1.34 m)">
+        <img src="images/trajectory_accuracy.png" id="accuracy-img" alt="Graph of height against horizontal position for a drop-kicked foam ball, comparing measured data with the PMADS drag model (RMSE 0.21 m) and an ideal kinematic model (RMSE 1.34 m)">
     </section>
 
     <footer id='site-footer'>
