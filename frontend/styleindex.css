@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 40px 60px;
+    padding: 72px 60px;
     gap: 40px;
 }
 
@@ -106,7 +106,7 @@ a#game-cta {
     color: #6b7280;
 }
 
-#home-divider {
+.home-divider {
     border: none;
     height: 1.5px;
     background-color: #e5e5e5;
@@ -199,6 +199,38 @@ a#game-cta {
     background: #fff;
 }
 
+#links {
+    padding: 24px 60px 48px;
+}
+
+#links-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0b5190;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+}
+
+#links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 32px;
+}
+
+#links-list a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0b5190;
+    text-decoration: none;
+}
+
+#links-list a:hover {
+    text-decoration: underline;
+}
+
 .divider {
     height: 1.5px;
     background-color: #e5e5e5;
@@ -206,9 +238,14 @@ a#game-cta {
 }
 
 @media (max-width: 900px) {
-    #home-divider {
+    .home-divider {
         margin: 20px 30px 8px;
     }
+
+    #links {
+        padding: 24px 30px 40px;
+    }
+
 
     #accuracy {
         flex-direction: column;
@@ -223,7 +260,7 @@ a#game-cta {
 @media (max-width: 600px) {
     #main {
         flex-direction: column;
-        padding: 24px 16px;
+        padding: 40px 16px;
         gap: 20px;
     }
 
@@ -248,8 +285,12 @@ a#game-cta {
         padding: 0 16px;
     }
 
-    #home-divider {
+    .home-divider {
         margin: 16px 16px 4px;
+    }
+
+    #links {
+        padding: 20px 16px 32px;
     }
 
     .list {
